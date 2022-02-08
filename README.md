@@ -12,5 +12,8 @@ after installation you can start run the application
 after app stared, you can visit to [localhost:8080](http://localhost:8080)
 
 ## Additional Modules
-[react-gist](https://www.npmjs.com/package/react-gist) to descripte code snippets on web page. especially i use it on article page.  
-[styled-components](https://styled-components.com/)styled-components is for the html element and similar to react-native. I use styled-componets rather than pure html and style as the class.  
+[react-gist](https://www.npmjs.com/package/react-gist)  
+to descripte code snippets on web page. especially i use it on article page.  
+[styled-components](https://styled-components.com/)  
+styled-components is for the html element and similar to react-native.   
+I use styled-componets rather than pure html and style as the class.  
