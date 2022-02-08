@@ -1,0 +1,25 @@
+.divContent{
+    display:flex;
+    flex-direction:column;
+}
+.divContent div{
+    width:100%;
+}
+.divContent code{
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color:#ffffff;
+    color:#2B2847;
+    width:90%;
+    overflow-x:auto;
+}
+.divContent pre{
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color:#ffffff;
+    color:#2B2847;
+    width:90%;
+    overflow-x:auto;
+}
