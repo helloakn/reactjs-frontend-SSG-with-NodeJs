@@ -4,7 +4,7 @@ This project is for my aungkyawnyunt.com. you can study reactjs frontend by walk
 
 ## Install moduels and Run the application
 
-### Install
+### Install modules(package)
 `nmp install`
 after installation you can start run the application
 ### Runn the application
