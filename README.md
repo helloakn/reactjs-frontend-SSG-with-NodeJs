@@ -19,4 +19,4 @@ styled-components is for the html element and similar to react-native.
 I use styled-componets rather than pure html and style as the class.  
 
 ## Code Flow
-![](./images/codeflow.png | width=100)
+![alt text](https://github.com/helloakn/reactjs-frontend/blob/master/images/codelayout.png?raw=true)
