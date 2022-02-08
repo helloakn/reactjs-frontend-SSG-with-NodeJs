@@ -27,6 +27,8 @@ import {RelatedItem} from '../../components/Items';
 
 import Gist from "react-gist";
 
+import {APP_DOMAIN,API_Domain,IMAGE_Domain} from '../../components/config';
+
 const ArticleDetailElements=(props)=>{
     let _element = props.element;
     let _key = props.keyid;
@@ -107,7 +109,7 @@ class ArticlePage extends ArticlePageController {
                 <DivMainContainerInner>
                     <Header>  
                         <HeaderImage>
-                            <img alt="Article Cover" src={article.image} width="100%" />
+                            <img alt="Article Cover" src={IMAGE_Domain+article.image} width="100%" />
                         </HeaderImage> 
                         <HeaderContent>
                             <Title>{article.title}</Title>
@@ -116,7 +118,7 @@ class ArticlePage extends ArticlePageController {
                             </CategoryContainer>
                             <DivAuthorContainer>
                                 <DivAuthorImage>
-                                    <img alt="Author" src={article.author_profile_image} width="100%" />
+                                    <img alt="Author" src={IMAGE_Domain+article.author_profile_image} width="100%" />
                                 </DivAuthorImage>
                                 <DivAuthorInfo>
                                     <label>Author : {article.author_name}</label>

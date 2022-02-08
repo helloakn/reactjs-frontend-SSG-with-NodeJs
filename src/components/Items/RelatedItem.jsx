@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import {Icon} from '../icons';
 
-import { DefaultColor,ImageUrl } from "../config";
+import { DefaultColor,IMAGE_Domain } from "../config";
 
 export const MainContainer = styled.div`
   display:flex;
@@ -145,7 +145,7 @@ export class RelatedItem  extends Component{
     return (
          <MainContainer>
              <ImageContainer>
-                <img alt="media" src={ImageUrl+item.image} width="100%"/>
+                <img alt="media" src={IMAGE_Domain+item.image} width="100%"/>
              </ImageContainer>
              <BodyContainer>
                 <BodyContainerInner>

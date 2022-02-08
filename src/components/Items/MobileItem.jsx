@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { DefaultColor,ImageUrl } from "../config";
+import { DefaultColor,IMAGE_Domain } from "../config";
 
 export const MainContainer = styled.div`
   display:flex;
@@ -101,7 +101,7 @@ export function MobileItem  ({
   return (
          <MainContainer {...props}>
              <ImageContainer>
-                <img alt="media" src={ImageUrl+item.image} height="100%"/>
+                <img alt="media" src={IMAGE_Domain+item.image} height="100%"/>
              </ImageContainer>
              <BodyContainer>
                 <div style={{width:"100%",display:'flex',justifyContent:'center'}}>
