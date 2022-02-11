@@ -92,7 +92,7 @@ class ArticlePage extends ArticlePageController {
 
         let article = this.state.article;
         let categories = article.categories.map((element,index)=>{
-            return (index===0?<AButton href={"category/"+element.name} key={'abutton'+element.id}  >{element.name}</AButton>:<AButton marginLeft="20px" href={"category/"+element.name} key={'abutton'+element.id}>{element.name}</AButton>);
+            return (index===0?<AButton href={APP_DOMAIN+"category/"+element.name} key={'abutton'+element.id}  >{element.name}</AButton>:<AButton marginLeft="20px" href={APP_DOMAIN+"category/"+element.name} key={'abutton'+element.id}>{element.name}</AButton>);
         });
 
         let latestArticles = this.state.latestArticles.map((element,i)=>{

@@ -188,12 +188,16 @@ class HomePage extends HomePageController {
                                         alignItems="center" 
                                         width="95%" 
                                     >
-                                        <ALink href="https://www.google.com" 
-                                        bgColor="#000000"
+                                        <ALink 
+                                            href="https://d2y7r2fmr1u4v.cloudfront.net/cv/akn.pdf" 
+                                            target="_blank"
+                                            bgColor="#000000"
                                         >
                                             Download CV
                                         </ALink>
-                                        <ALink href="https://www.google.com" 
+                                        <ALink 
+                                            href="mailto:aungkyawnyunt2004@gmail.com"
+                                            target="_blank" 
                                             bgColor={DefaultColor}
                                             borderColor="#000000"
                                             style={{marginLeft:20}}
@@ -277,7 +281,7 @@ class HomePage extends HomePageController {
                                     Latest
                                 </div>
                                 <div style={{borderBottom:"2px solid "+DefaultColor,fontFamily:"Cuprum",fontSize:63,color:"#ffffff"}}>
-                                    &nbsp;Article
+                                    &nbsp;Articles
                                 </div>
                             </DivFloat>
                             <ListItemContainer>

@@ -1,11 +1,11 @@
 import {ListItem} from './ListItem';
 import {MobileItem} from './MobileItem';
-import {ListItemSmall} from './ListItemSmall';
+import {ListItemSmall,EmptyItem} from './ListItemSmall';
 import {RelatedItem} from './RelatedItem';
 
 export {
     ListItem,
     MobileItem,
-    ListItemSmall,
+    ListItemSmall,EmptyItem,
     RelatedItem
 };

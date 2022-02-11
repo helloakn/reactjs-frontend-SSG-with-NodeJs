@@ -1,6 +1,8 @@
 
 import styled from "styled-components";
 
+import { DefaultColor,IMAGE_Domain,APP_DOMAIN } from "../../components/config";
+
 export const DivMainContainer = styled.div`
   display:flex;
   flex-direction:column;
@@ -18,9 +20,10 @@ export const DivMainContainer = styled.div`
   }
   & label{
         font-size:20px;
+        color:gray;
 }
   & a{
-          color:gray;
+          color:#788EBA;
           cursor:pointer;
   }
   & a:hover{
@@ -41,12 +44,11 @@ function NotFoundPage (){
         return (
            
           <DivMainContainer>
-                  <img src="404.jpg" width="400" alt="404 page"/>
-                  <h1>4 zero 4</h1><br/>
-                  <DivMsg>What you're looking for may have been misplaced in long Term Memory!</DivMsg><br/>
-                  <label>Mama is waiting you at home.</label><br/>
-                   <a href="https://www.aungkyawnyunt.com">SO, Let's go to the home!</a>
-                  
+                <img src={IMAGE_Domain+"404.jpg"} width="400" alt="404 page"/>
+                <h1>4 zero 4</h1><br/>
+                <DivMsg>What you're looking for may have been misplaced in long Term Memory!</DivMsg><br/>
+                <label>Mama is waiting you.</label><br/>
+                <a href="https://www.aungkyawnyunt.com">SO, Let's go to the home!</a>
           </DivMainContainer>
         );
 }

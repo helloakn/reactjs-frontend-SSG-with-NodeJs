@@ -29,7 +29,7 @@ import {Icon} from '../../components/icons';
 // =============================== VARIABLE ==================================
 
 
-
+import {APP_DOMAIN} from '../../components/config';
 // =============================== END VARIABLE ==============================
 
 class MainLayout extends MainLayoutController {
@@ -40,7 +40,7 @@ class MainLayout extends MainLayoutController {
        // console.log(this.state);
       //  console.log('end main state');
         let menuData = this.state.menu.map((element,index)=>{
-            return (<Alink key={'alinkmenu'+element.id} fontSize="16px" href={"category/"+element.name.toLowerCase()} target="new">{element.name}</Alink>);
+            return (<Alink key={'alinkmenu'+element.id} fontSize="16px" href={APP_DOMAIN+"category/"+element.name.toLowerCase()} target="new">{element.name}</Alink>);
         });
 
         let Component = this.props.component;
@@ -68,11 +68,11 @@ class MainLayout extends MainLayoutController {
                             <MenuFloat width="13%">
                                 <a href="https://www.aungkyawnyunt.com" style={{display:"flex",flexDirection:'row',alignItems:'center',textDecoration:"none"}}> 
                                     <img src={logo} height="70%" className="App-logo" alt="logo" />
-                                    <WebsiteLink >application.net</WebsiteLink>
+                                    <WebsiteLink >aungkyawnyunt.com</WebsiteLink>
                                 </a>
                             </MenuFloat>
                             <MenuFloat width="40%">
-                            <Alink  fontSize="16px" href="#" target="new">Home</Alink>
+                            <Alink  fontSize="16px" href={APP_DOMAIN} target="new">Home</Alink>
                                 {menuData}
                             </MenuFloat>
                         </MenuInner>

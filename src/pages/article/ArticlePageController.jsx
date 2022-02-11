@@ -43,11 +43,11 @@ class ArticlePageController extends Component {
              //   "latestArticles":result.data.latestArticles
            // });
            this.setState({
-            detail:result.data.detail,
-               "article":result.data.article,
-               "articleDetail":result.data.articleDetail,
-               "latestArticles" : result.data.latestArticles,
-               "categories" : result.data.category,
+              detail:result.data.detail,
+              "article":result.data.article,
+              "articleDetail":result.data.articleDetail,
+              "latestArticles" : result.data.latestArticles,
+              "categories" : result.data.category,
            });
             this.props.parentmenucallback(result.data.category);
           },

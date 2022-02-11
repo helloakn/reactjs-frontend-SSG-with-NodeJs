@@ -1,4 +1,11 @@
-      
+@font-face {
+  font-family: 'Dancing Script'; /*a name to be used later*/
+  src: url('fonts/DancingScript-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'Darker Grotesque'; /*a name to be used later*/
+  src: url('fonts/DarkerGrotesque-Regular.ttf'); /*URL to font*/
+}      
 
 body {
   margin: 0;

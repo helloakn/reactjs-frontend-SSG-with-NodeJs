@@ -15,7 +15,6 @@ export const DivMainContainer = styled.div`
   background-position:fixed;
   background-size: cover;
   background-attachment: fixed !important;
-  background-color:red;
 `;
 
 export const DivFloat = styled.div`

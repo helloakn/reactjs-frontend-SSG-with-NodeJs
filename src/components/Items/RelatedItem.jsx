@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import {Icon} from '../icons';
 
-import { DefaultColor,IMAGE_Domain } from "../config";
+import { DefaultColor,IMAGE_Domain,APP_DOMAIN } from "../config";
 
 export const MainContainer = styled.div`
   display:flex;
@@ -140,7 +140,7 @@ export class RelatedItem  extends Component{
     let item = this.props.item;
   //  console.log(item);
     let categories = item.categories.map((element,index)=>{
-      return (index===0?<AButton key={"abuttoncategory"+element.id} href={"category/"+element.name.toLowerCase()} >{element.name}</AButton>:<AButton key={"abuttoncategory"+element.id} href={"category/"+element.name.toLowerCase()} marginLeft="5px">{element.name}</AButton>);
+      return (index===0?<AButton key={"abuttoncategory"+element.id} href={APP_DOMAIN+"category/"+element.name.toLowerCase()} >{element.name}</AButton>:<AButton key={"abuttoncategory"+element.id} href={APP_DOMAIN+"category/"+element.name.toLowerCase()} marginLeft="5px">{element.name}</AButton>);
     });
     return (
          <MainContainer>
@@ -153,16 +153,19 @@ export class RelatedItem  extends Component{
                     {categories}
                     </HeadContainer>
                     <TitleContainer>
-                        <ALink href={"article/"+item.link} >{item.title}</ALink>
+                        <ALink href={APP_DOMAIN+"article/"+item.link} >{item.title}</ALink>
                     </TitleContainer>
                     <Contentontainer>
-                        <Paragraph>
-                        {item.intro}
+                        <Paragraph
+                        dangerouslySetInnerHTML={{
+                          __html: item.intro
+                      }}
+                      >
                         </Paragraph>
                     </Contentontainer>
                     <FooterContainer> 
                       <ReleaseDate>{item.created_at}</ReleaseDate>   
-                      <AButton href={"article/"+item.link} >Read  &nbsp;<Icon  color="#ffffff" active="yes" icon={" fas fa-chevron-circle-right"} /></AButton>
+                      <AButton href={APP_DOMAIN+"article/"+item.link} >Read  &nbsp;<Icon  color="#ffffff" active="yes" icon={" fas fa-chevron-circle-right"} /></AButton>
                     </FooterContainer>
                 </BodyContainerInner>
              </BodyContainer>
